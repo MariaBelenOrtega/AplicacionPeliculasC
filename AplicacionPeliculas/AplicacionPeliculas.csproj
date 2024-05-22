@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4317E373-7613-0E90-0D0E-F5B81448F403}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AplicacionPeliculas.My.MyApplication</StartupObject>
+    <RootNamespace>AplicacionPeliculas</RootNamespace>
+    <AssemblyName>AplicacionPeliculas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(ProjectDir)**\*.vb</DefaultItemExcludes>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>bin\Debug\AplicacionPeliculas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>bin\Release\AplicacionPeliculas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\MyNamespace.Dynamic.Designer.cs" />
+    <Compile Include="My Project\MyNamespace.Static.1.Designer.cs" />
+    <Compile Include="My Project\MyNamespace.Static.2.Designer.cs" />
+    <Compile Include="My Project\MyNamespace.Static.3.Designer.cs" />
+    <Compile Include="BuscaUsuario.Designer.cs">
+      <DependentUpon>BuscaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscaCompania.Designer.cs">
+      <DependentUpon>BuscaCompania.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaCompania.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscaGenero.Designer.cs">
+      <DependentUpon>BuscaGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscaIdioma.Designer.cs">
+      <DependentUpon>BuscaIdioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaPais.Designer.cs">
+      <DependentUpon>BusquedaPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compañia.Designer.cs">
+      <DependentUpon>Compañia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compañia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conecction.cs" />
+    <Compile Include="Cuenta.Designer.cs">
+      <DependentUpon>Cuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Espera.Designer.cs">
+      <DependentUpon>Espera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Espera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Genero.Designer.cs">
+      <DependentUpon>Genero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Genero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Idioma.Designer.cs">
+      <DependentUpon>Idioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Idioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.cs">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaGenero.Designer.cs">
+      <DependentUpon>ModificaGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaIdioma.Designer.cs">
+      <DependentUpon>ModificaIdioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarCompañia.Designer.cs">
+      <DependentUpon>ModificarCompañia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarCompañia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPais.Designer.cs">
+      <DependentUpon>ModificarPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.cs" />
+    <Compile Include="My Project\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pais.Designer.cs">
+      <DependentUpon>Pais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pelicula.Designer.cs">
+      <DependentUpon>Pelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Peliculas.Designer.cs">
+      <DependentUpon>Peliculas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Peliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasIntermedias.Designer.cs">
+      <DependentUpon>TablasIntermedias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablasIntermedias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BuscaUsuario.resx">
+      <DependentUpon>BuscaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscaCompania.resx">
+      <DependentUpon>BuscaCompania.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscaGenero.resx">
+      <DependentUpon>BuscaGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscaIdioma.resx">
+      <DependentUpon>BuscaIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaPais.resx">
+      <DependentUpon>BusquedaPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compañia.resx">
+      <DependentUpon>Compañia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuenta.resx">
+      <DependentUpon>Cuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Espera.resx">
+      <DependentUpon>Espera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Genero.resx">
+      <DependentUpon>Genero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idioma.resx">
+      <DependentUpon>Idioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaGenero.resx">
+      <DependentUpon>ModificaGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaIdioma.resx">
+      <DependentUpon>ModificaIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarCompañia.resx">
+      <DependentUpon>ModificarCompañia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPais.resx">
+      <DependentUpon>ModificarPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>AplicacionPeliculas.My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pais.resx">
+      <DependentUpon>Pais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pelicula.resx">
+      <DependentUpon>Pelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Peliculas.resx">
+      <DependentUpon>Peliculas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasIntermedias.resx">
+      <DependentUpon>TablasIntermedias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.resx">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>AplicacionPeliculas.My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_40623.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17_104874.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_icon-icons.com_74429.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-83_icon-icons.com_68859.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peliculasss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Image_icon-icons.com_54218.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garbage_trash_bin_delete_icon_219499.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27-Edit_Text_256x256_35395.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vote_counting_magnifier_icon_154141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diapositiva1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuenta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643769-building-home-house-main-menu-start_113416.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choose-2_102347.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_man_delete_21957.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choose-2_1023471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adduser_105070.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator_3552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edituser_105124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserEdit_40958.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserAdd_40960.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserRemove_40959.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

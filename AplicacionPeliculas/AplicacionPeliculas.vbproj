@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F1336218-BA4B-4161-8F56-3FC676DFC0A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AplicacionPeliculas.My.MyApplication</StartupObject>
+    <RootNamespace>AplicacionPeliculas</RootNamespace>
+    <AssemblyName>AplicacionPeliculas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AplicacionPeliculas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AplicacionPeliculas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuscaUsuario.Designer.vb">
+      <DependentUpon>BuscaUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscaCompania.Designer.vb">
+      <DependentUpon>BuscaCompania.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaCompania.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscaGenero.Designer.vb">
+      <DependentUpon>BuscaGenero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaGenero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscaIdioma.Designer.vb">
+      <DependentUpon>BuscaIdioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BuscaIdioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaPais.Designer.vb">
+      <DependentUpon>BusquedaPais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaPais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compañia.Designer.vb">
+      <DependentUpon>Compañia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compañia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conecction.vb" />
+    <Compile Include="Cuenta.Designer.vb">
+      <DependentUpon>Cuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Espera.Designer.vb">
+      <DependentUpon>Espera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Espera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Genero.Designer.vb">
+      <DependentUpon>Genero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Genero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Idioma.Designer.vb">
+      <DependentUpon>Idioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Idioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inicio.Designer.vb">
+      <DependentUpon>inicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaGenero.Designer.vb">
+      <DependentUpon>ModificaGenero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaGenero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaIdioma.Designer.vb">
+      <DependentUpon>ModificaIdioma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaIdioma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarCompañia.Designer.vb">
+      <DependentUpon>ModificarCompañia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarCompañia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPais.Designer.vb">
+      <DependentUpon>ModificarPais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pais.Designer.vb">
+      <DependentUpon>Pais.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pais.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pelicula.Designer.vb">
+      <DependentUpon>Pelicula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pelicula.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Peliculas.Designer.vb">
+      <DependentUpon>Peliculas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Peliculas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TablasIntermedias.Designer.vb">
+      <DependentUpon>TablasIntermedias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TablasIntermedias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario.Designer.vb">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BuscaUsuario.resx">
+      <DependentUpon>BuscaUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscaCompania.resx">
+      <DependentUpon>BuscaCompania.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscaGenero.resx">
+      <DependentUpon>BuscaGenero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscaIdioma.resx">
+      <DependentUpon>BuscaIdioma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaPais.resx">
+      <DependentUpon>BusquedaPais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compañia.resx">
+      <DependentUpon>Compañia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuenta.resx">
+      <DependentUpon>Cuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Espera.resx">
+      <DependentUpon>Espera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Genero.resx">
+      <DependentUpon>Genero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idioma.resx">
+      <DependentUpon>Idioma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inicio.resx">
+      <DependentUpon>inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaGenero.resx">
+      <DependentUpon>ModificaGenero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaIdioma.resx">
+      <DependentUpon>ModificaIdioma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarCompañia.resx">
+      <DependentUpon>ModificarCompañia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPais.resx">
+      <DependentUpon>ModificarPais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pais.resx">
+      <DependentUpon>Pais.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pelicula.resx">
+      <DependentUpon>Pelicula.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Peliculas.resx">
+      <DependentUpon>Peliculas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TablasIntermedias.resx">
+      <DependentUpon>TablasIntermedias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario.resx">
+      <DependentUpon>Usuario.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_40623.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17_104874.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_icon-icons.com_74429.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-83_icon-icons.com_68859.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peliculasss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Image_icon-icons.com_54218.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garbage_trash_bin_delete_icon_219499.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27-Edit_Text_256x256_35395.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vote_counting_magnifier_icon_154141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diapositiva1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuenta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643769-building-home-house-main-menu-start_113416.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choose-2_102347.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_man_delete_21957.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choose-2_1023471.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adduser_105070.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator_3552.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edituser_105124.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserEdit_40958.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserAdd_40960.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UserRemove_40959.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
